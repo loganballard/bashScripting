@@ -37,7 +37,7 @@ while read secretLine; do
     read -ra SECARR <<< "$secretLine"
     SECRET_ENCODED="$(echo ${SECARR[1]} | sed 's/ //g')" # trim whitespace
     SECRET_DECODED="$(echo $SECRET_ENCODED | base64 -D)"
-    echo "Unencoded:\n$SECRET_DECODED\n"
+    echo "Unencoded:\n${SECARR[0]}: $SECRET_DECODED\n"
     IFS='\n'
 done < kubeSecData
 
