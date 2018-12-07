@@ -7,4 +7,4 @@
 * remove the "insert-repos-here" file
 * remove the "tickets-go-here" file
 * From the root directory of this repo, run the auto-run-audit.sh script as sudo and you should be golden!
-* tickets directory will be populated with "tickets" that are really just human-readable output of the JSON recommendations file
+* tickets directory will be populated with "tickets" that are really just human-readable output of the JSON recommendations file.  Eventually I'd love to hook this in to JIRA, but that's for the future
