@@ -1,6 +1,5 @@
 #! /bin/bash
 
-mkdir output-jsons
 cd repos
 REPOS=$(ls -l | awk '{print $9}')
 for R in $REPOS
@@ -12,3 +11,4 @@ do
 done
 cd ..
 python $PWD/parse-npm-audit.py
+python $PWD/format-output.py

@@ -5,4 +5,6 @@
 * Navigate to the repos directory
 * `git clone` any repos you want to audit such that you have a copy of the repo as a subdirectory of "repos"
 * remove the "insert-repos-here" file
+* remove the "tickets-go-here" file
 * From the root directory of this repo, run the auto-run-audit.sh script as sudo and you should be golden!
+* tickets directory will be populated with "tickets" that are really just human-readable output of the JSON recommendations file
