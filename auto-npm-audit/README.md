@@ -1,4 +1,4 @@
-*** NPM Auto-audit ***
+## NPM Auto-audit
 
 * This handy-dandy little script will run NPM audits on your code repos and output a useful json file with recommendations on what to do.  
 * First make sure you have python installed and that it's on your $PATH
