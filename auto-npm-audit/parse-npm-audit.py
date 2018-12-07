@@ -20,8 +20,10 @@ def getRelevantInfo(fileJson, filename):
         advisory = fileDict['advisories'][adv]
         if checkSev(advisory['severity']):
             action = {}
-            action['severity'] = 'high'
+            action['severity'] = advisory['severity']
+            action['overview'] = advisory['overview'].split('\n')[0]
             action['recommendation'] = advisory['recommendation']
+            action['module'] = advisory['module_name']
             action['paths'] = []
             for find in advisory['findings']:
                 for path in find['paths']:
@@ -30,7 +32,7 @@ def getRelevantInfo(fileJson, filename):
     if len(relevance['actions']) == 0:
         return None
     return relevance
-    
+
 bigOutput = []
 for filename in os.listdir('output-jsons'):
     if filename.endswith('.json'):
