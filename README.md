@@ -5,5 +5,5 @@ Useful bash scripts that I wrote for automatic pain in the ass tasks
    * Dependecy: yq
    https://yq.readthedocs.io/en/latest/
 
-* **auto-npm-audit**: automatically run a security audit on your node or js repos and create a nice little json file that details any security risks you might have
+* **auto-npm-audit**: automatically run a security audit on your node or js repos and create human-readable "tickets" 
    * Requires python
